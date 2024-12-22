@@ -82,7 +82,12 @@ ADAPTERS = [Adapter('SQK-NSK007',
             Adapter('Rapid',
                     start_sequence=('Rapid_adapter',
                                     'GTTTTCGCATTTATCGTGAAACGCTTTCGCGTTTTTCGTGCGCCGCTTCA')),
-
+             Adapter('LSK114',
+                        start_sequence=('LSK114_Y_Top', 'TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT'),
+                        end_sequence=('LSK114_Y_Bottom', 'GCAATACGTAACTGAACGAAGTACAGG')),
+            Adapter('internal',
+                        start_sequence=('internal top', 'GCAGTCGAACATGTAGCTGACTCAGGTCAC'),
+                        end_sequence=('internal_rc', 'GTGACCTGAGTCAGCTACATGTTCGACTGC')),
             Adapter('RBK004_upstream',
                     start_sequence=('RBK004_upstream', 'AATGTACTTCGTTCAGTTACGGCTTGGGTGTTTAACC')),
 
